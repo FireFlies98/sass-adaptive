@@ -1,0 +1,20 @@
+.design-build {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 32px;
+    justify-self: center;
+    margin-bottom: 128px;
+    &::-webkit-scrollbar {
+        width: 0px;
+        background: transparent; 
+    }
+    @include phone {
+        gap: 16px;
+    }
+}
+
+.build-image {
+    margin-bottom: 16px;
+}
