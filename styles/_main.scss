@@ -12,9 +12,15 @@
     }
     @include phone {
         gap: 16px;
+        margin-left: 16px;
+        margin-right: 16px;
     }
 }
 
 .build-image {
     margin-bottom: 16px;
+
+    @include phone {
+        max-height: 252px;
+    }
 }

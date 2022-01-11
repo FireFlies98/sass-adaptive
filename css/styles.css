@@ -78,6 +78,13 @@ h1 {
   margin-top: 96px;
   margin-bottom: 128px;
 }
+@media (max-width: 320px) {
+  .header {
+    margin-top: 26px;
+    margin-bottom: 43px;
+    max-width: 87.7%;
+  }
+}
 
 .header-conteiner {
   display: flex;
@@ -91,49 +98,78 @@ h1 {
 .header-conteiner__navigation {
   display: flex;
 }
+@media (max-width: 320px) {
+  .header-conteiner__navigation {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+  }
+}
 
 .header--navigation {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 53px;
+  margin-right: 53px;
 }
 @media (max-width: 320px) {
   .header--navigation {
     display: none;
   }
-  :checked .header--navigation {
-    display: block;
-  }
 }
 
 .mobile--navigation {
-  display: flex;
+  display: none;
 }
-@media (max-width: 1440px) {
+@media (max-width: 320px) {
   .mobile--navigation {
-    display: none;
+    display: flex;
   }
 }
 
-.header-navigation__item {
-  margin-right: 53px;
+.navigation-menu__item {
+  display: block;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .search-icon {
   margin-right: 12px;
 }
+@media (max-width: 320px) {
+  .search-icon {
+    position: absolute;
+    right: 45px;
+  }
+}
 
 #menu__toggle {
   opacity: 0;
 }
+@media (max-width: 1440px) {
+  #menu__toggle {
+    display: none;
+  }
+}
 
 .navigation__btn {
-  display: flex;
+  display: none;
   position: absolute;
   align-items: center;
-  right: 150px;
   width: 26px;
   height: 26px;
   cursor: pointer;
   z-index: 1;
+}
+@media (max-width: 320px) {
+  .navigation__btn {
+    display: flex;
+    justify-content: end;
+    right: 20px;
+    top: 21px;
+  }
 }
 
 .navigation__btn > span,
@@ -154,6 +190,12 @@ h1 {
 .navigation__btn > span::after {
   content: "";
   top: 7px;
+}
+
+.menu__box {
+  display: flex;
+  position: fixed;
+  visibility: hidden;
 }
 
 #menu__toggle:checked ~ .navigation__btn > span {
@@ -179,6 +221,12 @@ h1 {
   font-size: 48px;
   line-height: 64px;
 }
+@media (max-width: 320px) {
+  .header--title {
+    font-size: 33px;
+    line-height: 50px;
+  }
+}
 
 .design-build {
   display: grid;
@@ -196,11 +244,18 @@ h1 {
 @media (max-width: 320px) {
   .design-build {
     gap: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 }
 
 .build-image {
   margin-bottom: 16px;
+}
+@media (max-width: 320px) {
+  .build-image {
+    max-height: 252px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
