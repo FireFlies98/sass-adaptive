@@ -4,6 +4,18 @@
     }
 }
 
+@mixin mini-desktop {
+    @media (max-width: $mini-desktop) {
+        @content;
+    }
+}
+
+@mixin ladtop {
+    @media (max-width: $ladtop) {
+        @content;
+    }
+}
+
 @mixin whider-than-phone-horizont {
     @media (min-whidth: #{$phone-gorizont-width + 1px}) {
         @content;

@@ -78,6 +78,23 @@ h1 {
   margin-top: 96px;
   margin-bottom: 128px;
 }
+@media (max-width: 1024px) {
+  .header {
+    max-width: 81%;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    max-width: 84%;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    margin-top: 26px;
+    margin-bottom: 43px;
+    max-width: 87.7%;
+  }
+}
 @media (max-width: 320px) {
   .header {
     margin-top: 26px;
@@ -98,6 +115,12 @@ h1 {
 .header-conteiner__navigation {
   display: flex;
 }
+@media (max-width: 480px) {
+  .header-conteiner__navigation {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+  }
+}
 @media (max-width: 320px) {
   .header-conteiner__navigation {
     display: grid;
@@ -108,8 +131,28 @@ h1 {
 .header--navigation {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 53px;
-  margin-right: 53px;
+  gap: 43px;
+  margin-right: 43px;
+  margin-left: 53px;
+}
+@media (max-width: 1024px) {
+  .header--navigation {
+    gap: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .header--navigation {
+    gap: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .header--navigation {
+    display: none;
+  }
 }
 @media (max-width: 320px) {
   .header--navigation {
@@ -117,22 +160,79 @@ h1 {
   }
 }
 
+.header-navigation__item {
+  position: relative;
+  letter-spacing: 0.3em;
+  font-size: 13px;
+}
+
+.header-navigation__item:hover::before {
+  content: "";
+  width: 35px;
+  height: 2px;
+  background-color: #000000;
+  position: absolute;
+  top: 100%;
+  left: 6px;
+  margin-top: 4px;
+}
+
+.navigation__item--one::before {
+  content: "";
+  width: 35px;
+  height: 2px;
+  background-color: #000000;
+  position: absolute;
+  top: 100%;
+  left: 6px;
+  margin-top: 4px;
+}
+
+.navigation-item:hover {
+  color: #3a7571;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  padding: 70px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #9bebff;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.5s;
+}
+
 .mobile--navigation {
   display: none;
 }
+@media (max-width: 480px) {
+  .mobile--navigation {
+    display: block;
+  }
+}
 @media (max-width: 320px) {
   .mobile--navigation {
-    display: flex;
+    display: block;
   }
 }
 
 .navigation-menu__item {
   display: block;
-  color: #333;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  margin: 7px 0;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
   text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+.navigation-menu__item:hover {
+  color: #5e92a7;
 }
 
 .search-icon {
@@ -145,8 +245,22 @@ h1 {
   }
 }
 
+.search-icon:hover {
+  content: "";
+}
+
 #menu__toggle {
   opacity: 0;
+}
+@media (max-width: 768px) {
+  #menu__toggle {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  #menu__toggle {
+    display: none;
+  }
 }
 @media (max-width: 1440px) {
   #menu__toggle {
@@ -162,6 +276,14 @@ h1 {
   height: 26px;
   cursor: pointer;
   z-index: 1;
+}
+@media (max-width: 480px) {
+  .navigation__btn {
+    display: flex;
+    justify-content: end;
+    right: 20px;
+    top: 21px;
+  }
 }
 @media (max-width: 320px) {
   .navigation__btn {
@@ -180,6 +302,7 @@ h1 {
   width: 100%;
   height: 2px;
   background-color: #000000;
+  transition-duration: 0.5s;
 }
 
 .navigation__btn > span::before {
@@ -190,12 +313,6 @@ h1 {
 .navigation__btn > span::after {
   content: "";
   top: 7px;
-}
-
-.menu__box {
-  display: flex;
-  position: fixed;
-  visibility: hidden;
 }
 
 #menu__toggle:checked ~ .navigation__btn > span {
@@ -221,6 +338,18 @@ h1 {
   font-size: 48px;
   line-height: 64px;
 }
+@media (max-width: 768px) {
+  .header--title {
+    font-size: 40px;
+    line-height: 59px;
+  }
+}
+@media (max-width: 480px) {
+  .header--title {
+    font-size: 33px;
+    line-height: 50px;
+  }
+}
 @media (max-width: 320px) {
   .header--title {
     font-size: 33px;
@@ -241,16 +370,26 @@ h1 {
   width: 0px;
   background: transparent;
 }
+@media (max-width: 480px) {
+  .design-build {
+    gap: 16px;
+    margin-left: 16px;
+  }
+}
 @media (max-width: 320px) {
   .design-build {
     gap: 16px;
     margin-left: 16px;
-    margin-right: 16px;
   }
 }
 
 .build-image {
   margin-bottom: 16px;
+}
+@media (max-width: 480px) {
+  .build-image {
+    max-height: 252px;
+  }
 }
 @media (max-width: 320px) {
   .build-image {
