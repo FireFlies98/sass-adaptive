@@ -86,16 +86,16 @@
     font-size: 13px;
 }
 
-.header-navigation__item:hover::before {
-    content: "";
-    width: 35px;
-    height: 2px;
-    background-color: #000000;
-    position: absolute;
-    top: 100%;
-    left: 6px;
-    margin-top: 4px;
-}
+// .header-navigation__item:hover::before {
+//     content: "";
+//     width: 35px;
+//     height: 2px;
+//     background-color: #000000;
+//     position: absolute;
+//     top: 100%;
+//     left: 6px;
+//     margin-top: 4px;
+// }
 
 .navigation__item--one::before {
     content: "";
