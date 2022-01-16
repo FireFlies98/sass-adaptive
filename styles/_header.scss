@@ -3,7 +3,7 @@
     margin: auto;
     flex-direction: column;
     justify-content: space-between;
-    height: 272px;
+    height: $header-height;
     max-width: 77.7%;
     margin-top: 96px;
     margin-bottom: 128px;
@@ -45,11 +45,6 @@
         display: grid;
         grid-template-columns: 3fr 1fr 1fr;
     }
-    
-    @include phone {
-        display: grid;
-        grid-template-columns: 3fr 1fr 1fr;
-    }
 }
 
 .header--navigation {
@@ -60,13 +55,13 @@
     margin-left: 53px;
 
     @include mini-desktop {
-        gap: 30px;
+        gap: $ul-gap-30;
         margin-right: 30px;
         margin-left: 30px;
     }
 
     @include ladtop {
-        gap: 10px;
+        gap: $ul-gap-10;
         margin-right: 10px;
         margin-left: 10px;
     }
@@ -82,8 +77,8 @@
 
 .header-navigation__item {
     position: relative;
-    letter-spacing: 0.3em;
-    font-size: 13px;
+    letter-spacing: $letter-spacing-03;
+    font-size: $li-font-size-13;
 }
 
 // .header-navigation__item:hover::before {
@@ -99,9 +94,9 @@
 
 .navigation__item--one::before {
     content: "";
-    width: 35px;
-    height: 2px;
-    background-color: #000000;
+    width: $li-before-width;
+    height: $li-before-height;
+    background-color: $li-before-color;
     position: absolute;
     top: 100%;
     left: 6px;
@@ -109,7 +104,7 @@
 }
 
 .navigation-item:hover {
-    color: rgb(58, 117, 113);
+    color: $li-hover-color;
 }
 
 .menu__box {
@@ -122,8 +117,8 @@
     padding: 70px 0;
     list-style: none;
     text-align: center;
-    background-color: rgb(155, 235, 255);
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    background-color: $ul-background-color;
+    box-shadow: 1px 0px 6px $ul-box-shadow-color;
     transition-duration: .5s;
 }
 
@@ -142,15 +137,14 @@
 .navigation-menu__item {
     display: block;
     margin: 7px 0;
-    color: #000000;
-    font-size: 16px;
-    font-weight: 400;
+    color: $li-before-color;
+    font-size: $li-font-size-16;
     text-decoration: none;
     transition-duration: .5s;
 }
 
 .navigation-menu__item:hover {
-    color: rgb(94, 146, 167);
+    color: $li-hover-color-two;
 }
 
 .search-icon {
@@ -162,9 +156,9 @@
     }
 }
 
-.search-icon:hover {
-    content: "";
-}
+// .search-icon:hover {
+//     content: "";
+// }
 
 #menu__toggle {
     opacity: 0;
@@ -186,8 +180,8 @@
     display: none;
     position: absolute;
     align-items: center;
-    width: 26px;
-    height: 26px;
+    width: $label-width;
+    height: $label-height;
     cursor: pointer;
     z-index: 1;
 
@@ -211,9 +205,9 @@
 .navigation__btn > span::after {
     display: block;
     position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #000000;
+    width: $span-width;
+    height: $span-height;
+    background-color: $span-color;
     transition-duration: .5s;
 }
 
@@ -247,22 +241,18 @@
 }
 
 .header--title {
-    font-size: $h1-font-size;
-    line-height: $h1-line-height;
+    font-size: $h1-font-size-48;
+    line-height: $h1-line-height-64;
+    letter-spacing: $letter-spacing-005;
 
     @include ladtop {
-        font-size: 40px;
-        line-height: 59px;
+        font-size: $h1-font-size-40;
+        line-height: $h1-line-height-59;
     }
 
     @include phone-horizont {
-        font-size: 33px;
-        line-height: 50px;
-    }
-
-    @include phone {
-        font-size: 33px;
-        line-height: 50px;
+        font-size: $h1-font-size-33;
+        line-height: $h1-line-height-50;
     }
 }
 

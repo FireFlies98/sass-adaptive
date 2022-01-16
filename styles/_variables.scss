@@ -3,10 +3,7 @@ $font:  "Lato", "Red Hat Display";
 $font-lato: "Lato";
 $font-rhd: "Red Hat Display";
 $primary-color: #000000;
-
-// h1
-$h1-font-size: 48px;
-$h1-line-height: 64px;
+$font-weight: 400;
 
 // media
 $phone-width: 320px;
@@ -14,3 +11,75 @@ $phone-gorizont-width: 480px;
 $ladtop: 768px;
 $mini-desktop: 1024px;
 $desktop-width: 1440px;
+
+// letter-spacing
+$letter-spacing-005: 0.05em;
+$letter-spacing-01: 0.1em;
+$letter-spacing-03: 0.3em;
+
+// desktop - header
+$header-height: 272px;
+$h1-font-size-48: 48px;
+$h1-line-height-64: 64px;
+$li-font-size-13: 13px;
+$li-font-size-16: 16px;
+$li-before-width: 35px;
+$li-before-height: 2px;
+$li-before-color: #000000;
+$li-hover-color: rgb(58, 117, 113);
+$li-hover-color-two: rgb(94, 146, 167);
+$ul-background-color: rgb(155, 235, 255);
+$ul-box-shadow-color: rgba(0, 0, 0, .2);
+$label-width: 26px;
+$label-height: 26px;
+$span-width: 100%;
+$span-height: 2px;
+$span-color: #000000;
+
+// phone, phone-horizont, ladtop, mini-desktop - header
+$ul-gap-30: 30px;
+$ul-gap-10: 10px;
+$h1-font-size-40: 40px;
+$h1-font-size-33: 33px;
+$h1-line-height-59: 59px;
+$h1-line-height-50: 50px;
+
+// desktop - main
+$main-div-gap-32: 32px;
+$main-div-gap-34: 34px;
+$h3-font-size-23: 23px;
+$h3-line-height-38: 38px;
+$h3-hover-color: rgb(58, 117, 113);
+$a-arow-color: #7B7B7B;
+$a-arow-font-size: 27px;
+$a-font-size-16: 16px;
+$a-line-height-26: 26px;
+$p-font-size-19: 19px;
+$p-font-size-12: 12px;
+$p-line-height-20: 20px;
+$p-line-height-26: 26px;
+$p-line-height-32: 32px;
+$p-color: #565656;
+$p-color-7B: #7B7B7B;
+$h4-font-size-23: 23px;
+$h4-line-height-38: 38px;
+$h5-font-size-23: 23px;
+$h5-line-height-38: 38px;
+
+// phone, phone-horizont, ladtop, mini-desktop - main
+$main-div-gap-16: 16px;
+$h3-font-size-19: 19px;
+$h3-line-height-32: 32px;
+$p-font-size-16: 16px;
+$p-line-height-26: 26px;
+
+// desktop - footer
+$footer-background: #F4F4F4;
+$h2-font-size-48: 48px;
+$h2-line-height-64: 64px;
+$a-color-hover: rgb(58, 117, 113);
+
+// phone, phone-horizont, ladtop, mini-desktop - footer
+$h2-font-size-42: 42px;
+$h2-font-size-33: 33px;
+$h2-line-height-50: 50px;
