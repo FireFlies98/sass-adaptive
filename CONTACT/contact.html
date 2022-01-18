@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>CONTACT</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-conteiner">
+            <div class="header--logo">
+                <img src="image/Manifest.svg" alt="logo">
+            </div>
+            <nav class="header-conteiner__navigation">
+                <ul class="header--navigation">
+                    <li class="header-navigation__item"><a href="/Users/vadymedgarov/Documents/git_tutorial/work/first model/sass_adaptive/index.html" class="navigation-item">HOME</a></li>
+                    <li class="header-navigation__item"><a href="#" class="navigation-item">ABOUT</a></li>
+                    <li class="header-navigation__item"><a href="#" class="navigation-item">WORKS</a></li>
+                    <li class="header-navigation__item"><a href="#" class="navigation-item">BLOG</a></li>
+                    <li class="header-navigation__item navigation__item--one"><a href="#" class="navigation-item">CONTACT</a></li>
+                </ul>
+                <img src="image/search_icon.svg" alt="navigation-search-icon" class="search-icon">
+                <input id="menu__toggle" type="checkbox">
+                <label class="navigation__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="mobile--navigation menu__box">
+                    <li><a href="#" class="navigation-menu__item">HOME</a></li>
+                    <li><a href="#" class="navigation-menu__item">ABOUT</a></li>
+                    <li><a href="#" class="navigation-menu__item">WORKS</a></li>
+                    <li><a href="#" class="navigation-menu__item">BLOG</a></li>
+                    <li><a href="#" class="navigation-menu__item">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-contacts">
+            <h1 class="main_title">Contact Us</h1>
+            <h3 class="contacts_title">Contact information</h3>
+            <p class="contacts_text">486 Rahi street, Berlin .98 <br>Germany</p>
+            <div class="button-conteiner">
+                <button type="button" class="number"><img src="image/Tel.svg" alt="phone-icon" class="image">+48 601 366 816</button><br>
+            </div>
+            <button><img src="image/email.svg" alt="mail">company@support.com</button>
+            <h3 class="">Follow Us</h3>
+            <div>
+                <a href="#"><img src="image/facebook.svg" alt="facebook"></a>
+                <a href="#"><img src="image/twitter.svg" alt="twitter"></a>
+                <a href="#"><img src="image/dribble.svg" alt="dribble"></a>
+                <a href="#"><img src="image/linkedin.svg" alt="linkedin"></a>
+            </div>
+        </div>
+        <div class="main-login">
+            <p>If you need our help with your user account, have <br>questions about how to use the platform or are <br>experiencing technical difficulties, please do not hesitate <br>to contact us.</p>
+            <fieldset>
+                <legend>Name*</legend>
+                <input type="text" name="name" placeholder="Walter Moss">
+                <legend>Email*</legend>
+                <input type="email" name="mail" placeholder="Info@manifest.com">
+                <select name="select-contact" id="reason">
+                    <option value="reason-for-contact" selected disabled>Reason for contact</option>
+                    <option value="need-help">Need help</option>
+                    <option value="like-your-page">Like your page</option>
+                    <option value="beautiful-design">Beautiful design</option>
+                </select>
+                <button type="submit">Send &#8594;</button>
+            </fieldset>
+        </div>
+    </main>
+</body>
+</html>

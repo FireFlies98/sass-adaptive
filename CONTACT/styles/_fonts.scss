@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Red+Hat+Display:wght@300;400;500&display=swap');
+
+body {
+    font-family: $font;
+    color: $primary-color;
+    font-weight: $font-weight;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-color;
+    font-family: $font-lato;
+}
+
+h1 {
+    font-family: $font-rhd;
+}

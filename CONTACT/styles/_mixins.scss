@@ -1,0 +1,41 @@
+@mixin desktop {
+    @media (max-width: $desktop-width) {
+        @content;
+    }
+}
+
+@mixin mini-desktop {
+    @media (max-width: $mini-desktop) {
+        @content;
+    }
+}
+
+@mixin ladtop {
+    @media (max-width: $ladtop) {
+        @content;
+    }
+}
+
+@mixin whider-than-phone-horizont {
+    @media (min-whidth: #{$phone-gorizont-width + 1px}) {
+        @content;
+    }
+}
+
+@mixin phone-horizont {
+    @media (max-width: $phone-gorizont-width) {
+        @content;
+    }
+}
+
+@mixin whider-than-phone {
+    @media (min-whidth: #{$phone-width + 1px}) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (max-width: $phone-width) {
+        @content;
+    }
+}

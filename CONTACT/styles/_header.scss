@@ -1,0 +1,225 @@
+.header {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 77.7%;
+    margin-top: 96px;
+    margin-bottom: 131px;
+
+    @include mini-desktop {
+        max-width: 81%;
+    }
+
+    @include ladtop {
+        max-width: 84%;
+    }
+
+    @include phone-horizont {
+        margin-top: 26px;
+        margin-bottom: 43px;
+        max-width: 87.7%;
+    }
+
+    @include phone {
+        margin-top: 26px;
+        margin-bottom: 43px;
+        max-width: 87.7%;
+    }
+}
+
+.header-conteiner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header--logo {
+    margin-right: 10px;
+}
+
+.header-conteiner__navigation {
+    display: flex;
+
+    @include phone-horizont {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr;
+    }
+}
+
+.header--navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 43px;
+    margin-right: 43px;
+    margin-left: 53px;
+
+    @include mini-desktop {
+        gap: $ul-gap-30;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    @include ladtop {
+        gap: $ul-gap-10;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    @include phone-horizont {
+        display: none;
+    }
+
+    @include phone {
+        display: none;
+    }
+}
+
+.header-navigation__item {
+    position: relative;
+    letter-spacing: $letter-spacing-03;
+    font-size: $li-font-size-13;
+}
+
+.navigation__item--one::before {
+    content: "";
+    width: $li-before-width;
+    height: $li-before-height;
+    background-color: $li-before-color;
+    position: absolute;
+    top: 100%;
+    left: 26px;
+    margin-top: 4px;
+}
+
+.navigation-item:hover {
+    color: $li-hover-color;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    padding: 70px 0;
+    list-style: none;
+    text-align: center;
+    background-color: $ul-background-color;
+    box-shadow: 1px 0px 6px $ul-box-shadow-color;
+    transition-duration: .5s;
+}
+
+.mobile--navigation {
+    display: none;
+
+    @include phone-horizont {
+        display: block;
+    }
+    
+    @include phone {
+        display: block;
+    }
+}
+
+.navigation-menu__item {
+    display: block;
+    margin: 7px 0;
+    color: $li-before-color;
+    font-size: $li-font-size-16;
+    text-decoration: none;
+    transition-duration: .5s;
+}
+
+.navigation-menu__item:hover {
+    color: $li-hover-color-two;
+}
+
+.search-icon {
+    margin-right: 12px;
+
+    @include phone {
+        position: absolute;
+        right: 45px;
+    }
+}
+
+#menu__toggle {
+    opacity: 0;
+
+    @include ladtop {
+        display: none;
+    }
+
+    @include mini-desktop {
+        display: none;
+    }
+
+    @include desktop {
+        display: none;
+    }
+}
+
+.navigation__btn {
+    display: none;
+    position: absolute;
+    align-items: center;
+    width: $label-width;
+    height: $label-height;
+    cursor: pointer;
+    z-index: 1;
+
+    @include phone-horizont {
+        display: flex;
+        justify-content: end;
+        right: 20px;
+        top: 21px;
+    }
+
+    @include phone {
+        display: flex;
+        justify-content: end;
+        right: 20px;
+        top: 21px;
+    }
+}
+
+.navigation__btn > span,
+.navigation__btn > span::before,
+.navigation__btn > span::after {
+    display: block;
+    position: absolute;
+    width: $span-width;
+    height: $span-height;
+    background-color: $span-color;
+    transition-duration: .5s;
+}
+
+.navigation__btn > span::before {
+    content: "";
+    top: -7px;
+}
+
+.navigation__btn > span::after {
+    content: "";
+    top: 7px;
+}
+
+#menu__toggle:checked ~ .navigation__btn > span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .navigation__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .navigation__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+}
