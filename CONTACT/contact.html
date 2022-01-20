@@ -37,38 +37,62 @@
         </div>
     </header>
     <main class="main">
-        <div class="main-contacts">
-            <h1 class="main_title">Contact Us</h1>
-            <h3 class="contacts_title">Contact information</h3>
-            <p class="contacts_text">486 Rahi street, Berlin .98 <br>Germany</p>
-            <div class="button-conteiner">
-                <button type="button" class="number"><img src="image/Tel.svg" alt="phone-icon" class="image">+48 601 366 816</button><br>
-            </div>
-            <button><img src="image/email.svg" alt="mail">company@support.com</button>
-            <h3 class="">Follow Us</h3>
-            <div>
-                <a href="#"><img src="image/facebook.svg" alt="facebook"></a>
-                <a href="#"><img src="image/twitter.svg" alt="twitter"></a>
-                <a href="#"><img src="image/dribble.svg" alt="dribble"></a>
-                <a href="#"><img src="image/linkedin.svg" alt="linkedin"></a>
-            </div>
+        <div class="main-head">
+            <h1 class="main-head__title">Contact Us</h1>
+            <p class="main-head__text">If you need our help with your user account, have <br>questions about how to use the platform or are <br>experiencing technical difficulties, please do not hesitate <br>to contact us.</p>
         </div>
         <div class="main-login">
-            <p>If you need our help with your user account, have <br>questions about how to use the platform or are <br>experiencing technical difficulties, please do not hesitate <br>to contact us.</p>
-            <fieldset>
-                <legend>Name*</legend>
-                <input type="text" name="name" placeholder="Walter Moss">
-                <legend>Email*</legend>
-                <input type="email" name="mail" placeholder="Info@manifest.com">
-                <select name="select-contact" id="reason">
+            <div>
+                <h3 class="contacts_title">Contact information</h3>
+                <p class="contacts_text">486 Rahi street, Berlin .98 <br>Germany</p>
+                <div class="button-conteiner">
+                    <button type="button" class="number"><img src="image/Tel.svg" alt="phone-icon" class="image">+48 601 366 816</button><br>
+                </div>
+                <div class="button-conteiner__mail">
+                    <button type="button" class="number"><img src="image/email.svg" alt="mail" class="image">company@support.com</button>
+                </div>
+                <h3 class="social-title">Follow Us</h3>
+                <div class="social-conteiner">
+                    <a href="#"><img src="image/facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="image/twitter.svg" alt="twitter"></a>
+                    <a href="#"><img src="image/linkedin.svg" alt="linkedin"></a>
+                    <a href="#"><img src="image/dribble.svg" alt="dribblr"></a>
+                </div>
+            </div>
+            <fieldset class="login_conteiner">
+                <legend class="input_text">Name*</legend>
+                <input type="text" name="name" class="login_input" placeholder="Walter Moss">
+                <legend class="input_text">Email*</legend>
+                <input type="email" name="mail" class="login_input" placeholder="Info@manifest.com">
+                <select name="select-contact" id="reason" class="login_select">
+                    <span></span>
                     <option value="reason-for-contact" selected disabled>Reason for contact</option>
                     <option value="need-help">Need help</option>
                     <option value="like-your-page">Like your page</option>
                     <option value="beautiful-design">Beautiful design</option>
                 </select>
-                <button type="submit">Send &#8594;</button>
+                <legend class="input_text">Message*</legend>
+                <input type="text" name="messege" class="login_input login_input-margin" placeholder="Hi there ...">
+                <button type="submit" class="login_button">Send &#8594;</button>
             </fieldset>
         </div>
     </main>
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-contacts">
+                <h2 class="footer-title">Need a project?</h2>
+                <p class="footer-contact">(239) 555-0108</p>
+                <a href="#" class="footer-contact">tanya.hill@example.com</a>
+            </div>
+            <div class="footer-navigation">
+                <a href="#" class="footer-navigation__item item_one">Facebook</a>
+                <a href="#" class="footer-navigation__item">Instagram</a>
+                <a href="#" class="footer-navigation__item">Dribbble</a>
+                <a href="#" class="footer-navigation__item">Linkedin</a>
+            </div>
+            <p class="footer_end">© Copyright Manifest Theme. <br>Allrights reserved</p>
+        </div>
+    </footer>
 </body>
 </html>
+            
