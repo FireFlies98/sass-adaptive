@@ -3,10 +3,9 @@
     margin: auto;
     flex-direction: column;
     justify-content: space-between;
-    height: $header-height;
     max-width: 77.7%;
     margin-top: 96px;
-    margin-bottom: 128px;
+    margin-bottom: 131px;
 
     @include mini-desktop {
         max-width: 81%;
@@ -14,17 +13,18 @@
 
     @include ladtop {
         max-width: 84%;
+        margin-bottom: 73px;
     }
 
     @include phone-horizont {
         margin-top: 26px;
-        margin-bottom: 43px;
+        margin-bottom: 73px;
         max-width: 87.7%;
     }
 
     @include phone {
         margin-top: 26px;
-        margin-bottom: 43px;
+        margin-bottom: 73px;
         max-width: 87.7%;
     }
 }
@@ -81,17 +81,6 @@
     font-size: $li-font-size-13;
 }
 
-// .header-navigation__item:hover::before {
-//     content: "";
-//     width: 35px;
-//     height: 2px;
-//     background-color: #000000;
-//     position: absolute;
-//     top: 100%;
-//     left: 6px;
-//     margin-top: 4px;
-// }
-
 .navigation__item--one::before {
     content: "";
     width: $li-before-width;
@@ -99,7 +88,7 @@
     background-color: $li-before-color;
     position: absolute;
     top: 100%;
-    left: 6px;
+    left: 26px;
     margin-top: 4px;
 }
 
@@ -155,10 +144,6 @@
         right: 45px;
     }
 }
-
-// .search-icon:hover {
-//     content: "";
-// }
 
 #menu__toggle {
     opacity: 0;
@@ -239,20 +224,3 @@
     visibility: visible;
     left: 0;
 }
-
-.header--title {
-    font-size: $h1-font-size-48;
-    line-height: $h1-line-height-64;
-    letter-spacing: $letter-spacing-005;
-
-    @include ladtop {
-        font-size: $h1-font-size-40;
-        line-height: $h1-line-height-59;
-    }
-
-    @include phone-horizont {
-        font-size: $h1-font-size-33;
-        line-height: $h1-line-height-50;
-    }
-}
-
